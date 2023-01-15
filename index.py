@@ -1,4 +1,4 @@
-# © https://t.me/CyniteBackup
+# © https://t.me/Netflix_Hindi_Movies_4K2
 import os
 from io import BytesIO
 from queue import Queue
@@ -15,7 +15,7 @@ bot = Bot(TOKEN)
 
 
 def welcome(update, context) -> None:
-    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome To Shortner Fly Search Bot.\n"
+    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome To Netflix Hindi Movies Search Bot.\n"
                               f"🔥 Directly Search From The Bot.")
     update.message.reply_text("👇 Enter Any Movie or Series Name 👇")
 
@@ -30,7 +30,7 @@ def find_movie(update, context):
             keyboard = InlineKeyboardButton(movie["title"], callback_data=movie["id"])
             keyboards.append([keyboard])
         reply_markup = InlineKeyboardMarkup(keyboards)
-        search_results.edit_text('Here Is What I Found...', reply_markup=reply_markup)
+        search_results.edit_text('Click Which One You Want...', reply_markup=reply_markup)
     else:
         search_results.edit_text('Sorry No Results Are Found')
 
