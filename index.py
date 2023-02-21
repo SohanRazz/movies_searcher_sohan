@@ -30,9 +30,9 @@ def find_movie(update, context):
             keyboard = InlineKeyboardButton(movie["title"], callback_data=movie["id"])
             keyboards.append([keyboard])
         reply_markup = InlineKeyboardMarkup(keyboards)
-        search_results.edit_text('Click Which One You Want...\nIt Will Take A Minute To Give You Link\nI Am Not able To Give You Series Link', reply_markup=reply_markup)
+        search_results.edit_text('Click On Which Movie You Want /n/n Note:- I Won't WE Able To Give You Series Link', reply_markup=reply_markup)
     else:
-        search_results.edit_text('Sorry No Results Are Found')
+        search_results.edit_text('Sorry No Results Are Found /n Search Here @Request_Movies_Searcher2')
 
 
 def movie_result(update, context) -> None:
