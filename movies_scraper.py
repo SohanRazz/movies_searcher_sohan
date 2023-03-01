@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 url_list = {}
-api_key = "44a730ce9cf9c76c108f712d84d00e7f1460eaa1"
+api_key = "37ca781d294530c4198510ed8ac0d6fef8109ccb"
 
 
 def search_movies(query):
